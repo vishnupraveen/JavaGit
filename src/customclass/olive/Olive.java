@@ -4,12 +4,11 @@ public class Olive {
 
 
     private OliveName name=OliveName.KALAMATA;
-    private long color=0x2e0854;
+    private OliveColor color=OliveColor.PURPLE;
     private int oil=3;
 
-    public Olive() { }
 
-    public Olive(OliveName name, long color, int oil) {
+    public Olive(OliveName name, OliveColor color, int oil) {
         this.name = name;
         this.color = color;
         this.oil = oil;
@@ -23,11 +22,11 @@ public class Olive {
         this.name = name;
     }
 
-    public long getColor() {
+    public OliveColor getColor() {
         return color;
     }
 
-    public void setColor(long color) {
+    public void setColor(OliveColor color) {
         this.color = color;
     }
 

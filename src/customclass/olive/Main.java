@@ -8,9 +8,9 @@ public class Main {
 
         List<Olive> olives =new ArrayList<>();
 
-        olives.add(new Olive(OliveName.KALAMATA,0x000000,2));
-        olives.add(new Olive(OliveName.KALAMATA,0x000000,2));
-        olives.add(new Olive(OliveName.LIGURIAN,0x2e0854,3));
+        olives.add(new Kalamata());
+        olives.add(new Kalamata());
+        olives.add(new Ligurian());
         OlivePress press=new OlivePress();
 
         int totalOil= press.getOil(olives);
