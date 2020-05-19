@@ -13,6 +13,12 @@ public class HashMapImpl {
         System.out.println(map);
         Set<String> keys=map.keySet();
         Iterator<String> itr=keys.iterator();
+        while(itr.hasNext())
+        {
+            String state=itr.next();
+            System.out.println("Capital of "+state+" is "+map.get(state));
+        }
+
         System.out.println(map);
     }
 }
