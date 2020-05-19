@@ -11,8 +11,8 @@ public class Main {
         olives.add(new Kalamata());
         olives.add(new Kalamata());
         olives.add(new Ligurian());
-        OlivePress press=new OlivePress();
-
+        Press press=new OlivePress();
+        press.setOil(22);
         int totalOil= press.getOil(olives);
         System.out.println("Total olive oil: "+totalOil);
     }
